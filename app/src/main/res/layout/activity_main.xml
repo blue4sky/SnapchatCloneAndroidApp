@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snapchatwp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:drawableStart="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/metro"
+        android:foregroundTint="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="260dp"
+        android:fontFamily="@font/metro"
+        android:text="Username"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#e92754 "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="133dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="360dp"
+        android:fontFamily="@font/metro"
+        android:text="Password"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
+        android:textColor="#e92754 "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:fontFamily="@font/metro"
+        android:foregroundTint="#FFFFFF"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorLink="#FFFFFF"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:layout_width="484dp"
+        android:layout_height="76dp"
+        android:adjustViewBounds="false"
+        android:onClick="loginClicked"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/login" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="474dp"
+        android:layout_height="76dp"
+        android:onClick="signupClicked"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/signup" />
+
+    <ImageView
+        android:id="@+id/mySnapchat"
+        android:layout_width="124dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText"
+        app:srcCompat="@drawable/me" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
